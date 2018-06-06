@@ -16,6 +16,7 @@ include_once 'widgets/header.php';
 
 //SHORTCODES
 include_once 'shortcodes/slider.php';
+include_once 'shortcodes/blog.php';
 include_once 'shortcodes/quo_fixed.php';
 include_once 'shortcodes/contact.php';
 include_once 'shortcodes/posts_slider.php';
@@ -23,6 +24,7 @@ include_once 'shortcodes/image_hover.php';
 
 //VISUAL COMPOSER
 include_once 'shortcodes/vc/slider.php';
+include_once 'shortcodes/vc/blog.php';
 include_once 'shortcodes/vc/quo_fixed.php';
 include_once 'shortcodes/vc/contact.php';
 include_once 'shortcodes/vc/quo_fixed.php';
