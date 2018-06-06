@@ -1,7 +1,8 @@
 .main-blog {
   width: 100%;
   display: flex;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+  background: #FFF; }
   .main-blog .header {
     display: flex;
     min-height: 40vh;
@@ -40,15 +41,17 @@
     flex-wrap: wrap;
     justify-content: space-between; }
     .main-blog .content .post-card {
-      margin-top: 15px;
+      margin-top: 30px;
       padding-right: 0px;
       padding-left: 0px;
-      width: 100%; }
+      width: 100%;
+      border: 1px solid rgba(77, 67, 208, 0.125); }
       .main-blog .content .post-card .card-body .date {
         color: #000;
         position: relative;
         padding-bottom: 15px;
-        margin-bottom: 15px; }
+        margin-bottom: 15px;
+        font-family: 'playfair_displaybold', Arial, Helvetica, sans-serif; }
         .main-blog .content .post-card .card-body .date:after {
           content: "";
           position: absolute;
@@ -58,11 +61,14 @@
           left: 0;
           bottom: 0; }
       .main-blog .content .post-card .card-body .card-text {
-        text-transform: uppercase; }
+        text-transform: uppercase;
+        font-size: 1em;
+        font-weight: 600; }
       .main-blog .content .post-card .card-footer {
         background-color: rgba(0, 0, 0, 0);
         border-top: 0px;
-        font-weight: bold; }
+        font-weight: bold;
+        padding: 1.5rem 1.25rem; }
     .main-blog .content .pagination-container {
       display: flex;
       justify-content: center;
@@ -78,17 +84,24 @@
   .main-blog .single-content {
     padding: 60px 0px; }
     .main-blog .single-content .date {
-      font-weight: bold; }
+      font-weight: bold;
+      font-family: 'playfair_displaybold', Arial, Helvetica, sans-serif; }
     .main-blog .single-content .title {
       position: relative;
-      padding-bottom: 20px;
+      padding-bottom: 35px;
       padding-top: 10px;
-      margin-bottom: 20px; }
+      margin-bottom: 35px; }
       .main-blog .single-content .title:after {
         content: "";
         position: absolute;
-        width: 100px;
+        width: 50px;
         height: 1px;
-        background-color: #000;
+        background-color: #4D43D0;
         left: 0;
         bottom: 0; }
+
+.social-networks .footer-social-menu {
+  padding: 0;
+  display: flex; }
+  .social-networks .footer-social-menu li {
+    max-width: 150px; }

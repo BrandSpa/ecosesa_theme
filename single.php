@@ -12,7 +12,7 @@
         <div class="content container single-content">
           
           <div class="w-75 m-auto">
-            <div class="w-100"><span class="date"><?php the_date(); ?></span></div>
+            <div class="w-100"><span class="date"><?php the_date('d/m/Y'); ?></span></div>
             <div class="w-75"><h2 class="title"><?php the_title(); ?></h2></div>
               <?php the_content() ?>
           </div>

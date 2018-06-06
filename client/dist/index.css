@@ -402,7 +402,7 @@ body, html {
   -moz-osx-font-smoothing: grayscale; }
 
 body {
-  font-family: 'brandon_grotesqueregular';
+  font-family: 'Aktiv Grotesk';
   font-weight: 100;
   font-size: 15px;
   line-height: 20px;
@@ -422,42 +422,46 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0; }
 
 h1 {
-  font-family: 'playfair_displayregular';
-  font-size: 3.5em;
-  color: #FFFFFF;
-  line-height: 55px; }
+  margin-top: 0px;
+  margin-bottom: 20px;
+  font-size: 2.7em;
+  line-height: 150%;
+  font-family: 'Gotham Rounded Book'; }
 
 h2 {
-  font-family: 'playfair_displaybold';
-  font-size: 2.5em;
-  color: #4D43D0;
-  line-height: 40px; }
-
-h3 {
-  font-family: 'playfair_displayregular';
-  font-size: 2em;
-  color: #4D43D0;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  font-size: 40px;
   line-height: 50px; }
 
+h3 {
+  font-size: 175%;
+  line-height: 140%;
+  font-family: 'Aktiv Grotesk';
+  font-weight: 900; }
+
 h4 {
-  margin-top: 0px;
-  font-family: 'brandon_grotesqueregular';
-  font-size: 1.5em;
-  color: #4D43D0;
-  line-height: 32px; }
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 100%;
+  line-height: 150%;
+  font-weight: 500;
+  font-family: 'Gotham Rounded Medium';
+  letter-spacing: 2px; }
 
 h5 {
-  font-family: 'brandon_grotesqueregular';
-  font-size: 1em;
-  color: #4D43D0;
-  line-height: 20px;
-  text-transform: uppercase; }
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 100%;
+  line-height: 150%;
+  font-weight: 500;
+  font-family: 'Gotham Rounded Medium'; }
 
 h6 {
-  font-family: 'playfair_displaybold';
-  font-size: 1em;
-  color: #FFFFFF;
-  line-height: 26px; }
+  margin-bottom: 10px;
+  font-size: 13px;
+  line-height: 19px;
+  font-family: 'Aktiv Grotesk'; }
 
 p {
   font-family: 'Aktiv Grotesk';
@@ -771,8 +775,7 @@ li {
       .app-header__menu li a {
         color: #6031BA;
         display: block;
-        font-family: 'brandon_grotesqueregular' !important;
-        font-size: .9em;
+        font-family: 'Aktiv Grotesk';
         display: block;
         -webkit-transition: all 500ms;
         transition: all 500ms; }
@@ -837,8 +840,7 @@ li {
     transition: transform 700ms;
     transition: transform 700ms, -webkit-transform 700ms; }
   .slider__content p {
-    color: #fff;
-    font-size: 1.5rem; }
+    color: #fff; }
   .slider__btns {
     margin: 0;
     width: 100%;
@@ -880,19 +882,9 @@ li {
           font-size: 1em;
           text-transform: uppercase; } }
   .slider__slide__content {
-    max-width: 300px;
+    max-width: 500px;
     position: absolute;
-    z-index: 998;
-    background: #4c43d1;
-    padding: 40px 30px; }
-    .slider__slide__content::before {
-      content: "";
-      display: block;
-      width: 60px;
-      height: 2px;
-      background: #fff;
-      position: absolute;
-      top: 40px; }
+    z-index: 998; }
     .slider__slide__content .btn {
       margin-top: 25px;
       display: block;
@@ -968,19 +960,30 @@ li {
     .quo-fixed input:-ms-input-placeholder, .quo-fixed select:-ms-input-placeholder {
       color: #6031BA; }
 
-.form-contact input, .form-contact textarea {
-  color: #545454;
-  border-bottom: 1px solid #d9d9d9; }
-  .form-contact input::-webkit-input-placeholder, .form-contact textarea::-webkit-input-placeholder {
-    color: #545454; }
-  .form-contact input:-moz-placeholder, .form-contact textarea:-moz-placeholder {
-    /* Firefox 18- */
-    color: #545454; }
-  .form-contact input::-moz-placeholder, .form-contact textarea::-moz-placeholder {
-    /* Firefox 19+ */
-    color: #545454; }
-  .form-contact input:-ms-input-placeholder, .form-contact textarea:-ms-input-placeholder {
-    color: #545454; }
+.form-contact {
+  padding: 20px 55px; }
+  .form-contact input, .form-contact textarea {
+    color: #545454;
+    border-bottom: 1px solid #d9d9d9;
+    border-radius: 0; }
+    .form-contact input::-webkit-input-placeholder, .form-contact textarea::-webkit-input-placeholder {
+      color: #545454; }
+    .form-contact input:-moz-placeholder, .form-contact textarea:-moz-placeholder {
+      /* Firefox 18- */
+      color: #545454; }
+    .form-contact input::-moz-placeholder, .form-contact textarea::-moz-placeholder {
+      /* Firefox 19+ */
+      color: #545454; }
+    .form-contact input:-ms-input-placeholder, .form-contact textarea:-ms-input-placeholder {
+      color: #545454; }
+  .form-contact .submit-contact-btn {
+    color: #4D43D0;
+    padding: 10px 40px;
+    font-size: 15px;
+    height: auto;
+    width: auto;
+    border-radius: 20px;
+    letter-spacing: normal; }
 
 .posts-slider {
   position: relative;
@@ -2796,66 +2799,3 @@ html {
     text-align: center; }
   .footer ul li {
     color: #FFF; }
-
-.circlePurple {
-  width: 150px;
-  height: 150px;
-  border: 2px solid #4c43d1;
-  border-radius: 50%;
-  text-align: center;
-  position: relative;
-  margin: 0 auto; }
-  .circlePurple .wpb_wrapper {
-    display: block;
-    width: 130px;
-    height: 130px;
-    position: absolute;
-    background: #4c43d1;
-    border-radius: 50%;
-    left: 0;
-    right: 0;
-    text-align: center;
-    margin: 0 auto;
-    top: 50%;
-    -webkit-transform: translateY(-50%);
-    transform: translateY(-50%); }
-    .circlePurple .wpb_wrapper p {
-      color: #FFF;
-      line-height: 3.5rem;
-      font-size: 2rem;
-      font-family: "playfair_displayregular", 'Times New Roman', Times, serif; }
-
-.btop {
-  margin-bottom: 10px; }
-  .btop:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    width: 20%;
-    height: 2px;
-    background: #fff;
-    display: none; }
-    @media screen and (min-width: 768px) {
-      .btop:before {
-        display: block; } }
-  .btop ul {
-    padding-left: 0;
-    padding-top: 1rem;
-    margin: 0; }
-    .btop ul li {
-      width: 100%;
-      text-align: center; }
-      @media screen and (min-width: 768px) {
-        .btop ul li {
-          text-align: left; } }
-      .btop ul li:first-child {
-        text-transform: uppercase;
-        font-weight: bold; }
-
-.social-networks svg {
-  width: 120px;
-  margin: 0 auto;
-  display: block; }
-
-svg a {
-  cursor: pointer; }

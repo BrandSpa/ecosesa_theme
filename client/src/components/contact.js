@@ -102,7 +102,7 @@ class Contact extends Component {
           <div className="input-error" style={ errors.mensaje ? {display: 'block'} : {display: 'none'}}>{errors.mensaje}</div>
         </div>
 
-        <button className="btn" style={{background: '#1689fe', color: '#FFF'}}>ENVIAR</button>
+        <button className="btn submit-contact-btn">ENVIAR</button>
       </form>
     )
   }

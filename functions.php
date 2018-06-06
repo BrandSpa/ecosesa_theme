@@ -44,7 +44,8 @@ include_once 'inc/bootstrap-pagination.php';
 //MENUS
 register_nav_menus(
   array(
-    'header' => 'Header Nav'
+    'header' => 'Header Nav',
+    'footer' => 'Footer Nav'
   )
 );
 

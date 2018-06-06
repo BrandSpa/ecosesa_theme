@@ -18,11 +18,11 @@ get_header(); ?>
          
         <?php while ( have_posts() ) : the_post(); ?>
 
-            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="col-12 col-sm-6 col-md-4 col-lg-4 d-flex">
                 <div class="card post-card">
                     <img class="card-img-top img-fluid" src="<?php the_post_thumbnail_url() ?>" alt="<?php the_title() ?>">
                     <div class="card-body">
-                        <h5 class="date"><?php the_date() ?></h5>
+                        <h5 class="date"><?php the_date('d/m/Y') ?></h5>
                         <p class="card-text"><?php the_title(); ?></p>
                         
                     </div>
