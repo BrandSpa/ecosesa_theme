@@ -1,0 +1,31 @@
+{
+  "name": "ecosesa_theme",
+  "version": "1.0.0",
+  "description": "Wordpress theme for ecosesa",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BrandSpa/ecosesa_theme.git"
+  },
+  "keywords": [
+    "Wordpres",
+    "theme",
+    "ecosesa"
+  ],
+  "author": "Michael F Sanchez A",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BrandSpa/ecosesa_theme/issues"
+  },
+  "homepage": "https://github.com/BrandSpa/ecosesa_theme#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-sass": "^4.0.1"
+  }
+}

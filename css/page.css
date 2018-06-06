@@ -1,0 +1,94 @@
+.main-blog {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap; }
+  .main-blog .header {
+    display: flex;
+    min-height: 40vh;
+    width: 100%;
+    background: #4D43D0 url(../imgs/blogbg.jpg) no-repeat;
+    background-size: cover;
+    align-items: flex-end;
+    padding-bottom: 30px;
+    justify-content: center; }
+    .main-blog .header .header-title {
+      margin: 0 auto; }
+      .main-blog .header .header-title h1 {
+        position: relative;
+        padding-bottom: 30px;
+        text-transform: capitalize; }
+        .main-blog .header .header-title h1 a {
+          color: #fff;
+          font-family: 'playfair_displayregular';
+          text-transform: capitalize;
+          font-size: 1em; }
+          .main-blog .header .header-title h1 a:hover {
+            color: #FFF;
+            text-decoration: none; }
+        .main-blog .header .header-title h1:after {
+          content: "";
+          position: absolute;
+          width: 100px;
+          height: 1px;
+          background-color: #FFF;
+          left: 0;
+          bottom: 0; }
+  .main-blog .content {
+    display: flex;
+    margin: 0 auto;
+    padding: 20px;
+    flex-wrap: wrap;
+    justify-content: space-between; }
+    .main-blog .content .post-card {
+      margin-top: 15px;
+      padding-right: 0px;
+      padding-left: 0px;
+      width: 100%; }
+      .main-blog .content .post-card .card-body .date {
+        color: #000;
+        position: relative;
+        padding-bottom: 15px;
+        margin-bottom: 15px; }
+        .main-blog .content .post-card .card-body .date:after {
+          content: "";
+          position: absolute;
+          width: 40px;
+          height: 1px;
+          background-color: #000;
+          left: 0;
+          bottom: 0; }
+      .main-blog .content .post-card .card-body .card-text {
+        text-transform: uppercase; }
+      .main-blog .content .post-card .card-footer {
+        background-color: rgba(0, 0, 0, 0);
+        border-top: 0px;
+        font-weight: bold; }
+    .main-blog .content .pagination-container {
+      display: flex;
+      justify-content: center;
+      padding: 10px;
+      align-items: center; }
+      .main-blog .content .pagination-container .page-item .page-link {
+        color: #000;
+        padding: 1rem 1rem; }
+        .main-blog .content .pagination-container .page-item .page-link.active {
+          color: #fff;
+          background: #4D43D0;
+          border-color: #4D43D0; }
+  .main-blog .single-content {
+    padding: 60px 0px; }
+    .main-blog .single-content .date {
+      font-weight: bold; }
+    .main-blog .single-content .title {
+      position: relative;
+      padding-bottom: 20px;
+      padding-top: 10px;
+      margin-bottom: 20px; }
+      .main-blog .single-content .title:after {
+        content: "";
+        position: absolute;
+        width: 100px;
+        height: 1px;
+        background-color: #000;
+        left: 0;
+        bottom: 0; }
