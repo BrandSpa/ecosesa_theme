@@ -8,8 +8,8 @@ class Contact extends Component {
       name: '',
       email: '',
       phone: '',
-      company: '',
-      question: '',
+      subject: '',
+      mensaje: '',
       privacy: true,
       protection: '',
       errors: {}
@@ -28,7 +28,6 @@ class Contact extends Component {
   handleSubmit = e => {
     e.preventDefault();
     const data = qs.stringify({action: 'store_contact', data: this.state});
-    if(this.protection.value.length == 0) {
       request
       .post(endpoint, data)
       .then(({data}) => {
@@ -40,7 +39,6 @@ class Contact extends Component {
         return this.setState({success: data.success});
 
       })
-    }
   }
 
   render() {
@@ -48,8 +46,8 @@ class Contact extends Component {
       name,
       email,
       phone,
-      company,
-      question,
+      subject,
+      mensaje,
       privacy,
       privacyErr,
       errors,
@@ -85,43 +83,23 @@ class Contact extends Component {
 
         <div className="form-group">
           <input
-            name="phone"
+            name="subject"
             type="text"
             className="form-control"
-            placeholder="Teléfono"
+            placeholder="Asunto"
             onChange={this.handleChange}
-            value={phone}/>
+            value={subject}/>
         </div>
 
         <div className="form-group">
           <textarea
-            name="question"
+            name="mensaje"
             rows="4"
             className="form-control"
-            placeholder="Describe brevemente tu caso"
+            placeholder="Mensaje"
             onChange={this.handleChange}
-            value={question}/>
-          <div className="input-error" style={ errors.question ? {display: 'block'} : {display: 'none'}}>{errors.question}</div>
-        </div>
-
-        <input
-          type="text"
-          ref={protection => this.protection = protection}
-          name="protection"
-          onChange={this.handleChange}
-          value={protection}
-          style={{display: 'none'}}
-        />
-
-        <div className="checkbox checkbox_privacy">
-          <label htmlFor="privacy" onClick={this.toggleCheckbox}>
-            <input
-              type="checkbox"
-              name="privacy"
-              checked={privacy}
-            /> He leído y acepto la política de privacidad
-            <div className="input-error" style={ errors.privacy ? {display: 'block'} : {display: 'none'}}>Debe aceptar la política de privacidad</div>
-          </label>
+            value={mensaje}/>
+          <div className="input-error" style={ errors.mensaje ? {display: 'block'} : {display: 'none'}}>{errors.mensaje}</div>
         </div>
 
         <button className="btn" style={{background: '#1689fe', color: '#FFF'}}>ENVIAR</button>
