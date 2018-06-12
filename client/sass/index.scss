@@ -288,6 +288,12 @@ li {
   ul{
     li{
       color: #FFF;
+      font-size: 12px;
+
+      &:first-child{
+        text-transform: uppercase;
+        font-weight: bold;
+      }
     }
   }
 }

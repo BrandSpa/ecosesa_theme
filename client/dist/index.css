@@ -856,6 +856,15 @@ li {
       font-family: 'Gotham Rounded Medium'; }
       .slider__btns a svg g {
         stroke: #fff; }
+  .slider__title:after {
+    content: "";
+    background: #FFF;
+    width: 50px;
+    height: 2px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 10px auto; }
   .slider__content {
     margin-top: 45px; }
     .slider__content__title {
@@ -881,15 +890,41 @@ li {
         .slider__content__btn {
           font-size: 1em;
           text-transform: uppercase; } }
+  .slider__slide .container {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
   .slider__slide__content {
-    max-width: 500px;
+    width: 70%;
     position: absolute;
-    z-index: 998; }
+    z-index: 998;
+    text-align: center;
+    padding: 15vh 0px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
+    .slider__slide__content p {
+      font-size: 1.7rem; }
     .slider__slide__content .btn {
-      margin-top: 25px;
-      display: block;
       width: auto;
-      max-width: 300px; }
+      display: inline;
+      margin: 0 auto;
+      padding: 15px 25px;
+      margin-top: 25px;
+      font-size: 15px;
+      color: #4D43D0;
+      font-weight: lighter; }
     @media (max-width: 767px) {
       .slider__slide__content {
         margin-top: 63px 0.3em;
@@ -2798,4 +2833,8 @@ html {
   .footer .text-center {
     text-align: center; }
   .footer ul li {
-    color: #FFF; }
+    color: #FFF;
+    font-size: 12px; }
+    .footer ul li:first-child {
+      text-transform: uppercase;
+      font-weight: bold; }

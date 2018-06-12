@@ -1,31 +1,50 @@
 <footer class="footer">
   <div class="container">
     <div class="row">
-    <div class="col-md-3 col-sm-12 text-center">
-      <?php  require('templates/logo.php') ?>
+    <div class="footer-logo col-md-2 col-sm-12 mt-3 text-center">
+      <?php  require('templates/logo_footer.php') ?>
     </div>
-    <div class="col-md-3 col-sm-12 btop">
+    <div class="col-6 col-sm-6 col-md-3 mt-3 btop">
       <ul>
-        <li>Gloria Maria Sierra Londoño</li>
-        <li> Directora Ejecutiva</li>
-        <li> 4701010</li>
-        <li> Ext. 126-115</li>
-        <li> 3174391675 </li>
-      </ul>
-    </div>
-    <div class="col-md-3 col-sm-12 btop">
-      <ul>
-        <li>Sede Administrativa Medellín</li>
-        <li> Carrera 69A #92C-21</li>
+        <li>SEDE MEDELLÍN</li>
+        <li>Carrera 69A #92C-21</li>
         <li> PBX: 470 1010</li>
-        <li> Ext. 115-126-129</li>
-        <li> comunicaciones@ecosesa.org </li>
+        <li> Ext. 111-129</li>
+        <li> mercadeo@ecosesa.com.co </li>
       </ul>
     </div>
-    <div class="col-md-3 col-sm-12 social-networks">
-      <?php 
-        include_once('templates/logo_footer.php');
-      ?>
+    <div class="col-6 col-sm-6 col-md-3 mt-3 btop">
+      <ul>
+        <li>Sede Apartadó</li>
+        <li>Calle 102 # 111-17</li>
+        <li> PBX: 828 2098</li>
+        <li> Fax   828-1758</li>
+        <li> ccree@ecosesa.com.co </li>
+      </ul>
+    </div>
+    <div class="col-md-4 col-sm-12 mt-3 social-networks">
+      <div class="social-container">
+        <ul class="footer-social-menu">
+          <li>VISITA NUESTRAS REDES SOCIALES</li>
+          <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
+          <li><a href=""><i class="fab fa-twitter"></i></a> </li>
+          <li><a href=""><i class="fab fa-youtube"></i></a> </li>
+        </ul>
+      </div>
+      <div class="footer-menu">
+        <?php
+            	$nav = wp_nav_menu(array(
+                'theme_location' => 'footer',
+                'menu_class' => 'app-footer__menu',
+                'menu_id' => '',
+                'container' => false,
+                'echo' => false
+              ));
+    
+            echo clean_menu($nav);
+        ?>
+      </div>
+
     </div>
     </div>
   </div>
