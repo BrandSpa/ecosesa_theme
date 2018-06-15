@@ -137,3 +137,12 @@
     font-weight: normal; }
   .social-networks .footer-menu ul li a {
     color: #fff; }
+
+.headerInterna {
+  height: 500px;
+  position: relative; }
+  .headerInterna .wpb_column {
+    height: 100%; }
+    .headerInterna .wpb_column .vc_column-inner {
+      position: absolute;
+      bottom: 0; }

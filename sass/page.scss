@@ -193,3 +193,15 @@
         }
     }
 }
+
+.headerInterna{
+    height: 500px;
+    position: relative;
+    .wpb_column{
+        height: 100%;
+        .vc_column-inner {
+            position: absolute;
+            bottom: 0;
+        }
+    }
+}
