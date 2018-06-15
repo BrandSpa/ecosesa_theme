@@ -146,3 +146,6 @@
     .headerInterna .wpb_column .vc_column-inner {
       position: absolute;
       bottom: 0; }
+
+.app-header__menu li a:hover {
+  text-decoration: none; }
