@@ -2,7 +2,6 @@
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    background: #FFF;
     .header{
         display: flex;
         min-height: 40vh;
@@ -49,6 +48,11 @@
         flex-wrap: wrap;
         justify-content: space-between;
 
+        .card-deck{
+            .post-card{
+                max-width: 33.3333%;
+            }
+        }
         .post-card{
             margin-top: 30px;
             padding-right: 0px;
@@ -212,4 +216,8 @@
             text-decoration: none;
         }
     }
+}
+
+.mega-accordion .mega-panel {
+    background: transparent !important;
 }

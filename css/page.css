@@ -1,8 +1,7 @@
 .main-blog {
   width: 100%;
   display: flex;
-  flex-wrap: wrap;
-  background: #FFF; }
+  flex-wrap: wrap; }
   .main-blog .header {
     display: flex;
     min-height: 40vh;
@@ -40,6 +39,8 @@
     padding: 20px;
     flex-wrap: wrap;
     justify-content: space-between; }
+    .main-blog .content .card-deck .post-card {
+      max-width: 33.3333%; }
     .main-blog .content .post-card {
       margin-top: 30px;
       padding-right: 0px;
